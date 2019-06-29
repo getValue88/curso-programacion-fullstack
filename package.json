@@ -1,0 +1,23 @@
+{
+  "name": "npmtest",
+  "version": "1.0.0",
+  "description": "probando npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "funcion_uno": "node ejercicio1/funcion_uno.js",
+    "funcion_dos": "node ejercicio1/funcion_dos.js",
+    "joke": "node ejercicio2/dependencie_test_one.js",
+    "chart": "node ejercicio2/dependencie_test_two.js",
+    "sumar1": "node ejercicio3/parametros_por_linea_de_comandos.js 4 6",
+    "sumar2": "node ejercicio3/parametros_por_linea_de_comandos.js 2.5 7.2",
+    "sumar3": "node ejercicio3/parametros_por_linea_de_comandos.js -4 2.2"
+  },
+  "author": "fc_pincharrata@hotmail.com.ar",
+  "license": "ISC",
+  "dependencies": {
+    "asciichart": "^1.5.9",
+    "one-liner-joke": "^1.2.0",
+    "readline-sync": "^1.4.9"
+  }
+}
