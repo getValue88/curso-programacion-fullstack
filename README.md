@@ -41,9 +41,9 @@ Ejercicios y prácticas del curso fullstack 2019
     -**Resolución:**
     
         - Función que suma dos valores recibidos como argumento e imprime el resultado en consola. Tareas de prueba:
-        - npm run sumar1 : 4 + 6
-        - npm run sumar2 : 2.5 + 7.2
-        - npm run sumar3 : -4 + 2.2
+            - npm run sumar1 : 4 + 6
+            - npm run sumar2 : 2.5 + 7.2
+            - npm run sumar3 : -4 + 2.2
 
 ***
 
