@@ -25,11 +25,11 @@ Ejercicios y prácticas del curso fullstack 2019
     - Crear dos archivos con funcionalidades diferentes (cada uno utilizando una libreria diferente sin contar readline-sync).
     - Definir las tareas asociadas y ejecutarlas.
     
-    -**Resolución:**
-        - 2.1:
+    - **Resolución:**
+        2.1:
             - Librerias utilizadas: one-liner-joke.
             - npm run joke : Imprime en consola una broma al azar.
-        - 2.2:
+        2.2:
             - Librerias utilizadas: asciichart.
             - npm run chart : Imprime en consola un grafico ascii predeterminado.
     
@@ -37,6 +37,7 @@ Ejercicios y prácticas del curso fullstack 2019
     - Crear una función y ejecutarlas por medio de tareas enviandole parametros por linea de comandos.
     
     -**Resolución:**
+    
         - Función que suma dos valores recibidos como argumento e imprime el resultado en consola. Tareas de prueba:
         - npm run sumar1 : 4 + 6
         - npm run sumar2 : 2.5 + 7.2
