@@ -36,7 +36,7 @@ Ejercicios y prácticas del curso fullstack 2019
               npm run chart : Imprime en consola un grafico ascii predeterminado.
     
 3. **Ejercicio:**
-    - Crear una función y ejecutarlas por medio de tareas enviandole parametros por linea de comandos.
+    - Crear una función y ejecutarla por medio de tareas enviandole parametros por linea de comandos.
     
          Resolución:
     
