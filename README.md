@@ -3,7 +3,25 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 01/07/2019
 
+4. **Ejercicio:**
+    - Implementar una función que sume los elementos de un arreglo.
+    - Forzar algún tipo de error a modo de ejemplificación.
+    
+5. **Ejercicio:**
+    - Partir de los ejercicios de NPM:
+    - Adaptar la forma de importar librerías a TS.
+    - Agregar tipos a las variables y funciones.
+          
+6. **Ejercicio:**
+    - Partir de cero:
+    - Definir funciones (con todos los tipos necesarios) para hacer lo siguiente:
+    - Agregar tipos a las variables y funciones.
+    - Cargar un listado de palabras (por esta vez, usar el arreglo como variable global).
+    - Insertar/eliminar/buscar/actualizar una palabra del listado.
+    - Agregar que la lista de palabras esté ordenada permanentemente (ayudarse con filminas de ordenamiento).
+          
 ## \# 28/06/2019
 
 1. **Ejercicio:**
