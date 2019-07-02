@@ -11,15 +11,15 @@ Ejercicios y prácticas del curso fullstack 2019
     
 5. **Ejercicio:**
     - Partir de los ejercicios de NPM:
-          - Adaptar la forma de importar librerías a TS.
-          - Agregar tipos a las variables y funciones.
+    - Adaptar la forma de importar librerías a TS.
+    - Agregar tipos a las variables y funciones.
           
 6. **Ejercicio:**
     - Partir de cero:
-          - Definir funciones (con todos los tipos necesarios) para hacer lo siguiente:
-                - Agregar tipos a las variables y funciones.
-                - Cargar un listado de palabras (por esta vez, usar el arreglo como variable global).
-                - Insertar/eliminar/buscar/actualizar una palabra del listado.
+    - Definir funciones (con todos los tipos necesarios) para hacer lo siguiente:
+    - Agregar tipos a las variables y funciones.
+    - Cargar un listado de palabras (por esta vez, usar el arreglo como variable global).
+    - Insertar/eliminar/buscar/actualizar una palabra del listado.
           
 ## \# 28/06/2019
 
