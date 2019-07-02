@@ -18,6 +18,7 @@
   "dependencies": {
     "asciichart": "^1.5.9",
     "one-liner-joke": "^1.2.0",
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.9",
+    "typescript": "^3.5.2"
   }
 }
