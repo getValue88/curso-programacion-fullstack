@@ -16,6 +16,7 @@
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^12.0.10",
     "asciichart": "^1.5.9",
     "one-liner-joke": "^1.2.0",
     "readline-sync": "^1.4.9",
