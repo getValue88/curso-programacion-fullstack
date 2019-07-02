@@ -20,6 +20,7 @@ Ejercicios y prácticas del curso fullstack 2019
     - Agregar tipos a las variables y funciones.
     - Cargar un listado de palabras (por esta vez, usar el arreglo como variable global).
     - Insertar/eliminar/buscar/actualizar una palabra del listado.
+    - Agregar que la lista de palabras esté ordenada permanentemente (ayudarse con filminas de ordenamiento).
           
 ## \# 28/06/2019
 
