@@ -27,7 +27,7 @@ function cargarNombres(arr: string[]): string[] {
     }
 }
 
-function mostrarArreglo(arr: string[]) {
+function mostrarArreglo(arr: string[]): void {
     arr.sort();
     console.log("\n");
     for (let i = 0; i < arr.length; i++) {
