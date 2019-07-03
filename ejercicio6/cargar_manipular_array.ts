@@ -3,6 +3,7 @@
         Definir funciones (con todos los tipos necesarios) para hacer lo siguiente:
         •Cargar un listado de palabras (por esta vez, usar el arreglo como variable global)
         •Insertar/eliminar/buscar/actualizar una palabra del listado
+        Agregar que la lista de palabras esté ordenada permanentemente (ayudarse con filminas de ordenamiento)
 */
 
 import * as rl from "readline-sync";

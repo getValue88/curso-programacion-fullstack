@@ -21,6 +21,40 @@ Ejercicios y prácticas del curso fullstack 2019
     - Cargar un listado de palabras (por esta vez, usar el arreglo como variable global).
     - Insertar/eliminar/buscar/actualizar una palabra del listado.
     - Agregar que la lista de palabras esté ordenada permanentemente (ayudarse con filminas de ordenamiento).
+
+         Resolución:
+    
+          - Librerias utilizadas: readline-sync.
+          - Implementación de función que permite al usuario ingresar valores y guardarlos a un arreglo. La carga termina cuando se introduce un valor vacio.
+          - Implementación de un menu que ofrece al usuario 5 opciones (1- Agregar datos al arreglo; 2- Eliminar datos del arreglo según índice; 3- Buscar por nombre, en caso de ser encontrado devuelve el índice del valor; 4- Modificar el valor de un determinado índice; 5- Finalizar el programa).
+          - Después de cada modificacion, el arreglo se ordena alfabeticamente ascendente y se imprime en pantalla.
+          - El menu se ejecuta despues de cada operación.
+
+7. **Ejercicio:**
+    - Iniciar proyecto NPM en carpeta nueva.
+    - Descargar las librerías necesarias.
+    - Cargar un listado de nombres a partir de un archivo de texto.
+    - Cargar un listado de colegios a partir de otro archivo de texto.
+    - A partir de ambos listados, saber en qué colegio va a votar una determinada persona.
+
+         Resolución:
+    
+          - Librerias utilizadas: fs, readline-sync.
+          - Guardar en dos strings la información de ambos archivos de texto respectivamente.
+          - Separar los valores de cada string almacenandolos en  y ordenandolos alfabeticamente.
+          - Implementacion de menú con tres opciones. (1- Buscar por nombre: En caso de encontrarlo, imprime en consola el lugar donde debe votar la persona buscada, de lo contrario vuelve a ejecutar el menú; 2- Buscar por índice: Imprime la lista completa en consola y permite seleccionar el índice. En caso de ser válido imprime en consola el lugar de votación, de lo contrario vuelve a ejecutar el menú; 3- Finalizar el programa).
+          - El criterio para asignar lugar de votación es según la primer letra del apellido de cada persona de la lista.
+
+8. **Ejercicio:**
+    - Crear proyecto NPM
+    - Implementar sistema para cargar matrices a partir de archivo de texto.
+    - Cargar un listado de nombres a partir de un archivo de texto.
+
+         Resolución:
+    
+          - Librerias utilizadas: fs.
+          - Implementación de función que recibe tres strings como parametros (ruta del .txt, separador 1, separador 2) y devuelve una matriz de números.
+    
           
 ## \# 28/06/2019
 
