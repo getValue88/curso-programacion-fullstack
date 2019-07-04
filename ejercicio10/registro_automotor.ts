@@ -9,7 +9,7 @@ import * as fs from 'fs';
 class RegistroAutomotor {
     private baseDatos: Auto[]
 
-    constructor(arrAutos:Auto[]) {
+    constructor(arrAutos: Auto[]) {
         this.baseDatos = arrAutos;
     }
 
@@ -27,7 +27,7 @@ class RegistroAutomotor {
         console.log("Automovil añadido a la lista.\n");
     }
 
-    getCar(index: number) {
+    getCar(index: number): void {
         if (index > 0 && index <= this.baseDatos.length)
             console.log((index) + " - Marca: " + this.baseDatos[index - 1].getMarca() + ", Modelo: " + this.baseDatos[index - 1].getModel() + ", Año: " + this.baseDatos[index - 1].getYear() + ", Color:" + this.baseDatos[index - 1].getColor() + "\n");
         else {
@@ -35,7 +35,7 @@ class RegistroAutomotor {
         }
     }
 
-    deleteCar(index: number) {
+    deleteCar(index: number): void {
         if (index > 0 && index <= this.baseDatos.length) {
             this.baseDatos.splice(index - 1, 1);
             console.log("Automovil eliminado de la lista.\n");
@@ -45,7 +45,7 @@ class RegistroAutomotor {
         }
     }
 
-    updateCar(index: number, marca: string, modelo: string, year: number, color: string) {
+    updateCar(index: number, marca: string, modelo: string, year: number, color: string): void {
         if (index > 0 && index <= this.baseDatos.length) {
             let newCar: Auto = new Auto(marca, modelo, year, color);
             this.baseDatos.splice(index - 1, 1, newCar);
@@ -119,7 +119,7 @@ class Auto {
         return this.kilometraje;
     }
 
-    getColor() {
+    getColor(): string {
         return this.color;
     }
 }
@@ -146,7 +146,7 @@ function getCarsArrFromTxt(txtRoute: string, separatorOne: string, separatorTwo:
 }
 
 
-let carsFromTxt:Auto[] = getCarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
+let carsFromTxt: Auto[] = getCarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
 
 let unRegistroAutomor = new RegistroAutomotor(carsFromTxt);
 
