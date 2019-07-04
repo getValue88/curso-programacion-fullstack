@@ -5,15 +5,18 @@ Ejercicios y prácticas del curso fullstack 2019
 ***
 ## \# 03/07/2019
 
+11. **Ejercicio:**
+    - Implementar la clase Matriz. En vez de consultar los valores con los corchetes, se debe hacer (desde afuera) a través de un método → get(x, y).
+
+10. **Ejercicio:**
+    - Usando la clase Auto: Implementar la clase RegistroAutomotor con métodos para consultar por un auto en un listado, borrar, actualizar y dar de alta.
+    - Partir de función ya implementada para leer archivos.
+
 9. **Ejercicio:**
     - 9.1:  
             - Plantear la clase Auto de la forma en que se vió en la clase → especificando variables internas y métodos.  
             - Implementar en TypeScript.
-<<<<<<< HEAD
-        
-=======
          
->>>>>>> f5c3a5672dba4c36c0dd594c07047c12fd31e2df
     - 9.2:  
             - Plantear la clase Monitor.  
             - Implementar en TypeScript.
