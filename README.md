@@ -52,7 +52,7 @@ Ejercicios y prácticas del curso fullstack 2019
     
           - Librerias utilizadas: fs, readline-sync.
           - Guardar en dos strings la información de ambos archivos de texto respectivamente.
-          - Separar los valores de cada string almacenandolos en  y ordenandolos alfabeticamente.
+          - Separar los valores de cada string almacenandolos en arreglos y ordenandolos alfabeticamente.
           - Implementacion de menú con tres opciones. (1- Buscar por nombre: En caso de encontrarlo, imprime en consola el lugar donde debe votar la persona buscada, de lo contrario vuelve a ejecutar el menú; 2- Buscar por índice: Imprime la lista completa en consola y permite seleccionar el índice. En caso de ser válido imprime en consola el lugar de votación, de lo contrario vuelve a ejecutar el menú; 3- Finalizar el programa).
           - El criterio para asignar lugar de votación es según la primer letra del apellido de cada persona de la lista.
 
