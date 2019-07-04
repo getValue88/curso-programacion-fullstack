@@ -9,9 +9,6 @@
 exports.__esModule = true;
 var rl = require("readline-sync");
 var arrayNombres = [];
-cargarNombres(arrayNombres);
-mostrarArreglo(arrayNombres);
-menu();
 //cargar array de strings
 function cargarNombres(arr) {
     var name;
@@ -116,3 +113,6 @@ function actualizar(arr) {
     }
     return arr;
 }
+cargarNombres(arrayNombres);
+mostrarArreglo(arrayNombres);
+menu();

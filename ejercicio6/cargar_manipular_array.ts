@@ -9,9 +9,6 @@
 import * as rl from "readline-sync";
 
 let arrayNombres: string[] = [];
-cargarNombres(arrayNombres);
-mostrarArreglo(arrayNombres);
-menu();
 
 //cargar array de strings
 function cargarNombres(arr: string[]): string[] {
@@ -121,3 +118,8 @@ function actualizar(arr: string[]): string[] {
     }
     return arr;
 }
+
+
+cargarNombres(arrayNombres);
+mostrarArreglo(arrayNombres);
+menu();
