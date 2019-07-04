@@ -9,7 +9,11 @@ Ejercicios y prácticas del curso fullstack 2019
     - 9.1:  
             - Plantear la clase Auto de la forma en que se vió en la clase → especificando variables internas y métodos.  
             - Implementar en TypeScript.
+<<<<<<< HEAD
         
+=======
+         
+>>>>>>> f5c3a5672dba4c36c0dd594c07047c12fd31e2df
     - 9.2:  
             - Plantear la clase Monitor.  
             - Implementar en TypeScript.
