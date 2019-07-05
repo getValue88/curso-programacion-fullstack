@@ -16,36 +16,47 @@ class Matrix {
     }
 }
 
-//obtener matriz de numeros desde un txt (utiliza fs)
-function getMatrixFromTxt(txtRoute: string, separatorOne: string, separatorTwo: string): number[][] {
-    let string: string = fs.readFileSync(txtRoute, 'utf8');         //extraer datos del txt
-    let rows: string[] = string.split(separatorOne);                //separar en filas y guardar en array
-    let matrixString: string[][] = [];                              //matriz de datos (strings)
-    let matrix: number[][] = new Array(rows.length);                //matriz de datos (numeros)
+class MatrixFromTxt {
+    private txtRoute: string
+    private separatorOne: string
+    private separatorTwo: string
 
-    //convertir cada fila en arreglo y guardarlo en matrizString
-    for (let i = 0; i < rows.length; i++) {
-        matrixString[i] = rows[i].split(separatorTwo);
+    constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
+        this.txtRoute = txtRoute;
+        this.separatorOne = separatorOne;
+        this.separatorTwo = separatorTwo;
     }
 
-    //inicializar la matriz de numeros
-    for (let i = 0; i < matrixString.length; i++) {
-        matrix[i] = new Array(matrixString[i].length);
-    }
+    getMatrix(): number[][] {
+        let string: string = fs.readFileSync(this.txtRoute, 'utf8');         //extraer datos del txt
+        let rows: string[] = string.split(this.separatorOne);                //separar en filas y guardar en array
+        let matrixString: string[][] = [];                                   //matriz de datos (strings)
+        let matrix: number[][] = new Array(rows.length);                     //matriz de datos (numeros)
 
-    //rellenar la matriz de numeros parseando los datos
-    for (let j = 0; j < matrixString.length; j++) {
-        for (let k = 0; k < matrixString[j].length; k++) {
-            matrix[j][k] = parseFloat(matrixString[j][k]);
+        //convertir cada fila en arreglo y guardarlo en matrizString
+        for (let i = 0; i < rows.length; i++) {
+            matrixString[i] = rows[i].split(this.separatorTwo);
         }
+
+        //inicializar la matriz de numeros
+        for (let i = 0; i < matrixString.length; i++) {
+            matrix[i] = new Array(matrixString[i].length);
+        }
+
+        //rellenar la matriz de numeros parseando los datos
+        for (let j = 0; j < matrixString.length; j++) {
+            for (let k = 0; k < matrixString[j].length; k++) {
+                matrix[j][k] = parseFloat(matrixString[j][k]);
+            }
+        }
+        return matrix;
     }
-    return matrix;
 }
 
-let matriz = getMatrixFromTxt('ejercicio11/matriz.txt', '|', ' ');
-console.log(matriz);
+let matrixFromTxt: MatrixFromTxt = new MatrixFromTxt('ejercicio11/matriz.txt', '|', ' ');
+let matriz: number[][] = matrixFromTxt.getMatrix();
 
-let matrix = new Matrix(matriz);
+let matrix: Matrix = new Matrix(matriz);
 console.log(matrix);
 
 //retornos validos

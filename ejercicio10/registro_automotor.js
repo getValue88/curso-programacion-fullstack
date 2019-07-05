@@ -100,28 +100,38 @@ var Auto = /** @class */ (function () {
     };
     return Auto;
 }());
-function getCarsArrFromTxt(txtRoute, separatorOne, separatorTwo) {
-    var txtCars = fs.readFileSync(txtRoute, 'utf8').split(separatorOne);
-    var carMatrix = new Array(txtCars.length);
-    var arrAutos = new Array(txtCars.length);
-    for (var i = 0; i < txtCars.length; i++) {
-        var x = txtCars[i].split(separatorTwo);
-        carMatrix[i] = new Array(x.length);
-        for (var j = 0; j < x.length; j++) {
-            carMatrix[i][j] = x[j];
+//utiliza fs en el método getArr();
+var CarsArrFromTxt = /** @class */ (function () {
+    function CarsArrFromTxt(txtRoute, separatorOne, separatorTwo) {
+        this.txtRoute = txtRoute;
+        this.separatorOne = separatorOne;
+        this.separatorTwo = separatorTwo;
+    }
+    CarsArrFromTxt.prototype.getArr = function () {
+        var txtCars = fs.readFileSync(this.txtRoute, 'utf8').split(this.separatorOne);
+        var carMatrix = new Array(txtCars.length);
+        var arrAutos = new Array(txtCars.length);
+        for (var i = 0; i < txtCars.length; i++) {
+            var x = txtCars[i].split(this.separatorTwo);
+            carMatrix[i] = new Array(x.length);
+            for (var j = 0; j < x.length; j++) {
+                carMatrix[i][j] = x[j];
+            }
         }
-    }
-    for (var i = 0; i < carMatrix.length; i++) {
-        arrAutos[i] = new Auto(carMatrix[i][0], carMatrix[i][1], parseInt(carMatrix[i][2]), carMatrix[i][3]);
-    }
-    return arrAutos;
-}
-var carsFromTxt = getCarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
-var unRegistroAutomor = new RegistroAutomotor(carsFromTxt);
+        for (var i = 0; i < carMatrix.length; i++) {
+            arrAutos[i] = new Auto(carMatrix[i][0], carMatrix[i][1], parseInt(carMatrix[i][2]), carMatrix[i][3]);
+        }
+        return arrAutos;
+    };
+    return CarsArrFromTxt;
+}());
+var carsFromTxt = new CarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
+var arrCars = carsFromTxt.getArr();
+var unRegistroAutomor = new RegistroAutomotor(arrCars);
 unRegistroAutomor.getCarsList();
 //TESTEO DE METODOS
-// unRegistroAutomor.addCar('Audi', 'A4', 2019, 'verde');
-// unRegistroAutomor.getCar(2);
-// unRegistroAutomor.deleteCar(3);
-// unRegistroAutomor.updateCar(3,'Mercedez Benz','Clase A',2017,'silver');
+//  unRegistroAutomor.addCar('Audi', 'A4', 2019, 'verde');
+//  unRegistroAutomor.getCar(2);
+//  unRegistroAutomor.deleteCar(3);
+//  unRegistroAutomor.updateCar(3,'Mercedez Benz','Clase A',2017,'silver');
 unRegistroAutomor.getCarsList();

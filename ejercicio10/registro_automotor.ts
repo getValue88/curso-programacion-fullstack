@@ -124,42 +124,55 @@ class Auto {
     }
 }
 
+//utiliza fs en el método getArr();
+class CarsArrFromTxt {
+    private txtRoute: string
+    private separatorOne: string
+    private separatorTwo: string
 
-function getCarsArrFromTxt(txtRoute: string, separatorOne: string, separatorTwo: string): Auto[] {
-    let txtCars: string[] = fs.readFileSync(txtRoute, 'utf8').split(separatorOne);
-    let carMatrix: string[][] = new Array(txtCars.length);
-    let arrAutos: Auto[] = new Array(txtCars.length);
+    constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
+        this.txtRoute = txtRoute;
+        this.separatorOne = separatorOne;
+        this.separatorTwo = separatorTwo;
+    }
 
-    for (let i = 0; i < txtCars.length; i++) {
-        let x = txtCars[i].split(separatorTwo);
-        carMatrix[i] = new Array(x.length);
+    getArr(): Auto[] {
+        let txtCars: string[] = fs.readFileSync(this.txtRoute, 'utf8').split(this.separatorOne);
+        let carMatrix: string[][] = new Array(txtCars.length);
+        let arrAutos: Auto[] = new Array(txtCars.length);
 
-        for (let j = 0; j < x.length; j++) {
-            carMatrix[i][j] = x[j];
+        for (let i = 0; i < txtCars.length; i++) {
+            let x = txtCars[i].split(this.separatorTwo);
+            carMatrix[i] = new Array(x.length);
+
+            for (let j = 0; j < x.length; j++) {
+                carMatrix[i][j] = x[j];
+            }
         }
-    }
 
-    for (let i = 0; i < carMatrix.length; i++) {
-        arrAutos[i] = new Auto(carMatrix[i][0], carMatrix[i][1], parseInt(carMatrix[i][2]), carMatrix[i][3]);
+        for (let i = 0; i < carMatrix.length; i++) {
+            arrAutos[i] = new Auto(carMatrix[i][0], carMatrix[i][1], parseInt(carMatrix[i][2]), carMatrix[i][3]);
+        }
+        return arrAutos;
     }
-    return arrAutos;
 }
 
 
-let carsFromTxt: Auto[] = getCarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
+let carsFromTxt: CarsArrFromTxt = new CarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
+let arrCars: Auto[] = carsFromTxt.getArr();
 
-let unRegistroAutomor = new RegistroAutomotor(carsFromTxt);
+let unRegistroAutomor = new RegistroAutomotor(arrCars);
 
 unRegistroAutomor.getCarsList();
 
 //TESTEO DE METODOS
 
-// unRegistroAutomor.addCar('Audi', 'A4', 2019, 'verde');
+//  unRegistroAutomor.addCar('Audi', 'A4', 2019, 'verde');
 
-// unRegistroAutomor.getCar(2);
+//  unRegistroAutomor.getCar(2);
 
-// unRegistroAutomor.deleteCar(3);
+//  unRegistroAutomor.deleteCar(3);
 
-// unRegistroAutomor.updateCar(3,'Mercedez Benz','Clase A',2017,'silver');
+//  unRegistroAutomor.updateCar(3,'Mercedez Benz','Clase A',2017,'silver');
 
 unRegistroAutomor.getCarsList();

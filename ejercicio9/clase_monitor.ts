@@ -33,12 +33,12 @@
 */
 
 class Monitor {
-    isOn: boolean
-    inches: number
-    resolution: string
-    bright: number
-    contrast: number
-    gamma: number
+   private isOn: boolean
+   private inches: number
+   private resolution: string
+   private bright: number
+   private contrast: number
+   private gamma: number
 
     constructor(inches: number, resolution: string, bright: number, contrast: number, gamma: number) {
         this.isOn = false;
