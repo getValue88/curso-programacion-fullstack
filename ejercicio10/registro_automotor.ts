@@ -136,7 +136,7 @@ class CarsArrFromTxt {
         this.separatorTwo = separatorTwo;
     }
 
-    getArr(): Auto[] {
+    generateCarsArr(): Auto[] {
         let txtCars: string[] = fs.readFileSync(this.txtRoute, 'utf8').split(this.separatorOne);
         let carMatrix: string[][] = new Array(txtCars.length);
         let arrAutos: Auto[] = new Array(txtCars.length);
@@ -159,7 +159,7 @@ class CarsArrFromTxt {
 
 
 let carsFromTxt: CarsArrFromTxt = new CarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
-let arrCars: Auto[] = carsFromTxt.getArr();
+let arrCars: Auto[] = carsFromTxt.generateCarsArr();
 
 let unRegistroAutomor = new RegistroAutomotor(arrCars);
 

@@ -21,7 +21,7 @@ class MatrixFromTxt {
     private separatorOne: string
     private separatorTwo: string
 
-    constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
+    public constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
         this.txtRoute = txtRoute;
         this.separatorOne = separatorOne;
         this.separatorTwo = separatorTwo;
