@@ -11,13 +11,15 @@
     "chart": "node ejercicio2/dependencie_test_two.js",
     "sumar1": "node ejercicio3/parametros_por_linea_de_comandos.js 4 6",
     "sumar2": "node ejercicio3/parametros_por_linea_de_comandos.js 2.5 7.2",
-    "sumar3": "node ejercicio3/parametros_por_linea_de_comandos.js -4 2.2"
+    "sumar3": "node ejercicio3/parametros_por_linea_de_comandos.js -4 2.2",
+    "ej13": "tsc ejercicio13/main.ts && node ejercicio13/main.js"
   },
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.0.10",
     "asciichart": "^1.5.9",
+    "colors": "^1.3.3",
     "one-liner-joke": "^1.2.0",
     "readline-sync": "^1.4.9",
     "typescript": "^3.5.2"

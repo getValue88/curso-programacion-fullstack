@@ -7,7 +7,7 @@ class Matrix {
         this.data = data;
     }
 
-    getValue(x, y): any {
+    public getValue(x, y): any {
         if ((x >= 0 && x < this.data.length) && (y >= 0 && y < this.data[x].length))
             return this.data[x][y];
         else {
@@ -27,7 +27,7 @@ class MatrixFromTxt {
         this.separatorTwo = separatorTwo;
     }
 
-    getMatrix(): number[][] {
+    public getMatrix(): number[][] {
         let string: string = fs.readFileSync(this.txtRoute, 'utf8');         //extraer datos del txt
         let rows: string[] = string.split(this.separatorOne);                //separar en filas y guardar en array
         let matrixString: string[][] = [];                                   //matriz de datos (strings)
@@ -60,12 +60,12 @@ let matrix: Matrix = new Matrix(matriz);
 console.log(matrix);
 
 //retornos validos
-console.log(matrix.getValue(2, 3));
-console.log(matrix.getValue(3, 0));
+// console.log(matrix.getValue(2, 3)); 
+// console.log(matrix.getValue(3, 0));
 
 //retornos invalidos por indices incorrectos
-console.log(matrix.getValue(4, 2));
-console.log(matrix.getValue(0, 4));
-console.log(matrix.getValue(-2, -4));
-console.log(matrix.getValue(-2, 4));
-console.log(matrix.getValue(4, -2));
+// console.log(matrix.getValue(4, 2));
+// console.log(matrix.getValue(0, 4));
+// console.log(matrix.getValue(-2, -4));
+// console.log(matrix.getValue(-2, 4));
+// console.log(matrix.getValue(4, -2));

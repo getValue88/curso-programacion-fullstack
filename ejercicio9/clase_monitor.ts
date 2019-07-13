@@ -49,7 +49,7 @@ class Monitor {
         this.gamma = gamma;
     }
 
-    onOff(): void {
+    public onOff(): void {
         if (this.isOn) {
             this.isOn = false;
         } else {
@@ -57,47 +57,47 @@ class Monitor {
         }
     }
 
-    getInches(): number {
+    public getInches(): number {
         return this.inches;
     }
 
-    setResolution(resolution: string): void {
+    public setResolution(resolution: string): void {
         this.resolution = resolution;
     }
-    getResolution(): string {
+    public getResolution(): string {
         return this.resolution;
     }
-    incrementBright(): void {
+    public incrementBright(): void {
         if (this.bright < 100)
             this.bright += 1;
     }
-    decrementBright(): void {
+    public decrementBright(): void {
         if (this.bright > 1)
             this.bright -= 1;
     }
-    getBright(): number {
+    public getBright(): number {
         return this.bright;
     }
-    incrementContrast(): void {
+    public incrementContrast(): void {
         if (this.contrast < 100)
             this.contrast += 1;
     }
-    decrementContrast(): void {
+    public decrementContrast(): void {
         if (this.contrast > 1)
             this.contrast -= 1;
     }
-    getContrast(): number {
+    public getContrast(): number {
         return this.contrast;
     }
-    incrementGamma(): void {
+    public incrementGamma(): void {
         if (this.gamma < 100)
             this.gamma += 1;
     }
-    decrementGamma(): void {
+    public decrementGamma(): void {
         if (this.gamma > 2)
             this.gamma -= 1;
     }
-    getGamma(): number {
+    public getGamma(): number {
         return this.gamma;
     }
 }

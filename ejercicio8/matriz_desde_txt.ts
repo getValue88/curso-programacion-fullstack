@@ -5,9 +5,6 @@
 
 import * as fs from 'fs';
 
-console.log(getMatrixFromTxt('ejercicio8/matriz.txt', '|', ' '));
-
-
 //obtener matriz de numeros desde un txt (utiliza fs)
 function getMatrixFromTxt(txtRoute: string, separatorOne: string, separatorTwo: string): number[][] {
     let string: string = fs.readFileSync(txtRoute, 'utf8');         //extraer datos del txt
@@ -33,3 +30,5 @@ function getMatrixFromTxt(txtRoute: string, separatorOne: string, separatorTwo: 
     }
     return matrix;
 }
+
+console.log(getMatrixFromTxt('ejercicio8/matriz.txt', '|', ' '));

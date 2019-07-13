@@ -13,7 +13,7 @@ class RegistroAutomotor {
         this.baseDatos = arrAutos;
     }
 
-    getCarsList(): void {
+    public getCarsList(): void {
         console.log("\n");
         for (let i = 0; i < this.baseDatos.length; i++) {
             console.log((i + 1) + " - Marca: " + this.baseDatos[i].getMarca() + ", Modelo: " + this.baseDatos[i].getModel() + ", Año: " + this.baseDatos[i].getYear() + ", Color: " + this.baseDatos[i].getColor());
@@ -21,13 +21,13 @@ class RegistroAutomotor {
         console.log("\n");
     }
 
-    addCar(marca: string, modelo: string, year: number, color: string): void {
+    public addCar(marca: string, modelo: string, year: number, color: string): void {
         let newCar: Auto = new Auto(marca, modelo, year, color);
         this.baseDatos.push(newCar);
         console.log("Automovil añadido a la lista.\n");
     }
 
-    getCar(index: number): void {
+    public getCar(index: number): void {
         if (index > 0 && index <= this.baseDatos.length)
             console.log((index) + " - Marca: " + this.baseDatos[index - 1].getMarca() + ", Modelo: " + this.baseDatos[index - 1].getModel() + ", Año: " + this.baseDatos[index - 1].getYear() + ", Color:" + this.baseDatos[index - 1].getColor() + "\n");
         else {
@@ -35,7 +35,7 @@ class RegistroAutomotor {
         }
     }
 
-    deleteCar(index: number): void {
+    public deleteCar(index: number): void {
         if (index > 0 && index <= this.baseDatos.length) {
             this.baseDatos.splice(index - 1, 1);
             console.log("Automovil eliminado de la lista.\n");
@@ -45,7 +45,7 @@ class RegistroAutomotor {
         }
     }
 
-    updateCar(index: number, marca: string, modelo: string, year: number, color: string): void {
+    public updateCar(index: number, marca: string, modelo: string, year: number, color: string): void {
         if (index > 0 && index <= this.baseDatos.length) {
             let newCar: Auto = new Auto(marca, modelo, year, color);
             this.baseDatos.splice(index - 1, 1, newCar);
@@ -75,7 +75,7 @@ class Auto {
         this.kilometraje = 0;
     }
 
-    encenderApagar(): void {
+    public encenderApagar(): void {
         if (this.estaPrendido) {
             this.estaPrendido = false;
         } else {
@@ -83,48 +83,48 @@ class Auto {
         }
     }
 
-    acelerar(): void {
+    public acelerar(): void {
         this.velocidadActual += 1;
     }
 
-    frenar(): void {
+    public frenar(): void {
         this.velocidadActual -= 1;
     }
 
-    setKilometraje(n: number) {
+    public setKilometraje(n: number) {
         this.kilometraje += n;
     }
 
-    getStatus(): boolean {
+    public getStatus(): boolean {
         return this.estaPrendido;
     }
 
-    getVelocidadActual(): number {
+    public getVelocidadActual(): number {
         return this.velocidadActual;
     }
 
-    getMarca(): string {
+    public getMarca(): string {
         return this.marca;
     }
 
-    getModel(): string {
+    public getModel(): string {
         return this.modelo;
     }
 
-    getYear(): number {
+    public getYear(): number {
         return this.year;
     }
 
-    getKilometraje(): number {
+    public getKilometraje(): number {
         return this.kilometraje;
     }
 
-    getColor(): string {
+    public getColor(): string {
         return this.color;
     }
 }
 
-//utiliza fs en el método getArr();
+//utiliza fs en el método generateCarsArr();
 class CarsArrFromTxt {
     private txtRoute: string
     private separatorOne: string
@@ -136,7 +136,7 @@ class CarsArrFromTxt {
         this.separatorTwo = separatorTwo;
     }
 
-    getArr(): Auto[] {
+    public generateCarsArr(): Auto[] {
         let txtCars: string[] = fs.readFileSync(this.txtRoute, 'utf8').split(this.separatorOne);
         let carMatrix: string[][] = new Array(txtCars.length);
         let arrAutos: Auto[] = new Array(txtCars.length);
@@ -159,7 +159,7 @@ class CarsArrFromTxt {
 
 
 let carsFromTxt: CarsArrFromTxt = new CarsArrFromTxt('ejercicio10/cars.txt', '\r\n', ',');
-let arrCars: Auto[] = carsFromTxt.getArr();
+let arrCars: Auto[] = carsFromTxt.generateCarsArr();
 
 let unRegistroAutomor = new RegistroAutomotor(arrCars);
 

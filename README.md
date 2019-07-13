@@ -3,6 +3,43 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 12/07/2019
+
+12. **Ejercicio:**
+    - Armar una base de datos de libros.
+    - Hacer el planteo de las clases necesaria.
+    - Implementar la clase Libro.
+    - Implementar la clase GestorLibros → debe soportar insertar/consultar/modificar/eliminar libros (la entrada de información por teclado).
+    - Luego incorporar en donde se crea necesario un mecanismo para leer libros desde un archivo de texto
+         
+        Resolución:  
+
+          Implementación de 3 clases:
+           - Book:
+             --> Estado: Title, Author, Year.
+             --> Metodos: getter y setter para cada variable de estado.
+           - Libreria:
+             --> Estado: Arreglo de Book(s).
+             --> Metodos: 
+                   showBooks() --> Muestra la lista de libros por consola.
+                   addBook() --> Agrega un libro a la lista.
+                   searchByTitle(par?:string) --> Solicita el titulo del libro por medio de readline-sync. En caso de encontrarlo devuelve un objeto:Book.
+                      Parametro opcional:
+                         "u" --> actualizar datos del libro buscado.
+                         "d" --> eliminar de la lista el libro buscado.
+           - txtToBookArr:
+             --> Estado: rutaTxt, separatorRows, separadorCols.
+             --> Metodos:
+                   returnBookArr() --> Procesa el archivo de texto y devuelve un arreglo de Book(s).
+
+13. **Ejercicio:**
+    - Iniciar un proyecto NPM.
+    - Elegir una librería en https://www.npmjs.com/ e incorporarla en el proyecto.
+    - Modelar una clase con composiciones, que utilice dicha librería.
+    - Definir tarea NPM para compilar y correr los archivos necesarios.
+    
+          task : npm run ej13  --> Compila todos los archivos .ts y ejecuta main.js
+
 ## \# 03/07/2019
 
 9. **Ejercicio:**

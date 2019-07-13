@@ -48,7 +48,7 @@ class Auto {
         this.kilometraje = kilometraje;
     }
 
-    encenderApagar(): void {
+    public encenderApagar(): void {
         if (this.estaPrendido) {
             this.estaPrendido = false;
         } else {
@@ -56,39 +56,39 @@ class Auto {
         }
     }
 
-    acelerar(): void {
+    public acelerar(): void {
         this.velocidadActual += 1;
     }
 
-    frenar(): void {
+    public frenar(): void {
         this.velocidadActual -= 1;
     }
 
-    setKilometraje(n: number) {
+    public setKilometraje(n: number) {
         this.kilometraje += n;
     }
 
-    getStatus(): boolean {
+    public getStatus(): boolean {
         return this.estaPrendido;
     }
 
-    getVelocidadActual(): number {
+    public getVelocidadActual(): number {
         return this.velocidadActual;
     }
 
-    getMarca(): string {
+    public getMarca(): string {
         return this.marca;
     }
 
-    getModel(): string {
+    public getModel(): string {
         return this.modelo;
     }
 
-    getYear():number{
+    public getYear():number{
         return this.year;
     }
 
-    getKilometraje(): number {
+    public getKilometraje(): number {
         return this.kilometraje;
     }
 }
