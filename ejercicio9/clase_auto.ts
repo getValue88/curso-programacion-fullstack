@@ -38,7 +38,7 @@ class Auto {
     private year: number
     private kilometraje: number
 
-    constructor(color: string, marca: string, modelo: string,year: number, kilometraje: number) {
+    public constructor(color: string, marca: string, modelo: string,year: number, kilometraje: number) {
         this.estaPrendido = false;
         this.velocidadActual = 0;
         this.color = color;
