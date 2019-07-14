@@ -39,6 +39,22 @@ Ejercicios y prácticas del curso fullstack 2019
     - Definir tarea NPM para compilar y correr los archivos necesarios.
     
           task : npm run ej13  --> Compila todos los archivos .ts y ejecuta main.js
+         
+         Resolución:
+         
+         - Librerias utilizadas: colors
+        
+          Implementación de 2 clases:
+            - Calc:
+              --> Estado: valorUno, valorDos, resultado (valorUno+valorDos), formato:Format
+              --> Metodos: 
+                    getResult() --> devuelve el resultado de la operacion. :number
+                    getFormatedResult() --> imprime en consola el resultado de la operacion aplicando formato por medio de la clase Format
+            - Format:
+              --> Estado: value:number, format:string.
+              --> Metodos:
+                    private setNegative(),setPositive(),setZero() --> dan formato a la variable de estado format al crear una instancia de la clase dependiendo si el value es positivo, negativo o cero.
+                    public getValue() --> devuelve format:string.
 
 ## \# 03/07/2019
 
