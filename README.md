@@ -7,13 +7,13 @@ Ejercicios y prácticas del curso fullstack 2019
 
 14. **Ejercicio:**
     - Implementar las clases y métodos que se muestran: http://prntscr.com/ofvx1o
-    - Definir tarea NPM para compilar y correr los archivos necesarios.  
-
-14. **Ejercicio:**
-    - Implementar Registro Automotor visto anteriormente, pero agregando soporte de motos y camiones usando herencia.
     - Agregar variables/métodos adicionales.
-    - Implementar cada clase en un archivo diferente.
+    - Implementar cada clase en un archivo diferente. 
 
+15. **Ejercicio:**
+    - Implementar Registro Automotor visto anteriormente, pero agregando soporte de motos y camiones usando herencia.
+    - Definir tarea NPM para compilar y correr los archivos necesarios
+    
           task: npm run ej15
 
 ## \# 12/07/2019
