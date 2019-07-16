@@ -3,15 +3,15 @@ import * as fs from 'fs';
 class Matrix {
     private data: number[][]
 
-    constructor(data: number[][]) {
+    public constructor(data: number[][]) {
         this.data = data;
     }
 
-    public getValue(x, y): any {
+    public getValue(x, y): number {
         if ((x >= 0 && x < this.data.length) && (y >= 0 && y < this.data[x].length))
             return this.data[x][y];
         else {
-            return "Indices invalidos.";
+            return null;
         }
     }
 }
@@ -21,7 +21,7 @@ class MatrixFromTxt {
     private separatorOne: string
     private separatorTwo: string
 
-    public constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
+    constructor(txtRoute: string, separatorOne: string, separatorTwo: string) {
         this.txtRoute = txtRoute;
         this.separatorOne = separatorOne;
         this.separatorTwo = separatorTwo;

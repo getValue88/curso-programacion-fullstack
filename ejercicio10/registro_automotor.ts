@@ -9,7 +9,7 @@ import * as fs from 'fs';
 class RegistroAutomotor {
     private baseDatos: Auto[]
 
-    constructor(arrAutos: Auto[]) {
+    public constructor(arrAutos: Auto[]) {
         this.baseDatos = arrAutos;
     }
 

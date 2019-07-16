@@ -4,7 +4,7 @@ import * as rl from '../node_modules/readline-sync'
 export default class Library {
     private db: Book[]
 
-    constructor(db: Book[]) {
+    public constructor(db: Book[]) {
         this.db = db;
     }
 
@@ -34,7 +34,7 @@ export default class Library {
                 switch (operation) {
                     case "":
                         return this.db[i];
-                    case "d":
+                    case 'd':
                         this.db.splice(i, 1);
                         break;
                     case 'u':
@@ -44,9 +44,10 @@ export default class Library {
                 }
             }
         }
-        if (!wasFound)
+        if (!wasFound) {
             console.log("\nLibro no encontrado.");
-        return null;
+            return null;
+        }
     }
 
     private newBook(): Book {

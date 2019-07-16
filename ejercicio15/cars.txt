@@ -1,0 +1,6 @@
+auto,Fiat,Palio,2007,rojo
+moto,Honda,Wave,2000,Rojo
+auto,Volskwagen,Gol,1998,azul
+auto,Chevrolet,Corsa,1997,blanco
+camion,Scania,Serie R,2015,Blanco,12,25000,si
+auto,BMW,Serie 7,2019,silver

@@ -12,7 +12,8 @@
     "sumar1": "node ejercicio3/parametros_por_linea_de_comandos.js 4 6",
     "sumar2": "node ejercicio3/parametros_por_linea_de_comandos.js 2.5 7.2",
     "sumar3": "node ejercicio3/parametros_por_linea_de_comandos.js -4 2.2",
-    "ej13": "tsc ejercicio13/main.ts && node ejercicio13/main.js"
+    "ej13": "tsc ejercicio13/main.ts && node ejercicio13/main.js",
+    "ej15": "tsc ejercicio15/main.ts && node ejercicio15/main.js"
   },
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",
