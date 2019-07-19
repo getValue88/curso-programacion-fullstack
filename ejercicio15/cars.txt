@@ -1,6 +1,6 @@
-auto,Fiat,Palio,2007,rojo
-moto,Honda,Wave,2000,Rojo
-auto,Volskwagen,Gol,1998,azul
-auto,Chevrolet,Corsa,1997,blanco
-camion,Scania,Serie R,2015,Blanco,12,25000,si
-auto,BMW,Serie 7,2019,silver
+auto,ASD123,Juan Perez,Fiat,Palio,2007,rojo,4
+moto,FFF000,Maria Gomez,Honda,Wave,2000,Rojo
+auto,BSD456,Jose Garcia,Volskwagen,Gol,1998,azul,2
+auto,CCD789,Miguel Lopez,Chevrolet,Corsa,1997,blanco,4
+camion,VBV147,Alberto Flores,Scania,Serie R,2015,Blanco,35000
+auto,RTR852,Julio Bioca,BMW,Serie 7,2019,silver,4

@@ -10,9 +10,12 @@ let registro = new RegistroAutomotor("ejercicio15/cars.txt", "\r\n", ",");
 
 console.log(registro.getDb());
 
-registro.addCar("camion", "Ford", "700", 1976, "Rojo", 8, 15000, "no");
-registro.updateCar(3, "moto", "Motomel", "con parlantes", 2012, "azul");
-registro.deleteCar(4);
+registro.getVehicle('VBV147');
+
+registro.addVehicle("camion","CDF963","Carlos Mora", "Ford", "700", 1976, "Rojo",undefined, 35000);
+registro.addVehicle("auto","RTY789","Ruben Rivas", "Ford", "Falcon", 1970, "Verde", 4);
+registro.updateVehicle("ASD123", "moto","UIO456","Roberto Rojas", "Motomel", "con parlantes", 2012, "azul");
+registro.deleteVehicle("BSD456"); 
 
 // registro.getCarsList();
 

@@ -1,22 +1,18 @@
-import Auto from "./auto";
+import Vehiculo from "./vehiculo";
 
-export default class Camion extends Auto {
-    private capacidadCarga: number
-    private camaraFrigrorifica: string
+export default class Camion extends Vehiculo {
+    private peso: number
 
-    constructor(marca: string, modelo: string, year: number, color: string, ruedas: number, capacidadCarga: number, camaraFrigorifica: string) {
-        super(marca, modelo, year, color)
-
-        this.ruedas = ruedas;
-        this.capacidadCarga = capacidadCarga;
-        this.camaraFrigrorifica = camaraFrigorifica;
+    public constructor(dominio: string, titular: string, marca: string, modelo: string, año: number, color: string, peso: number) {
+        super(dominio, titular, marca, modelo, año, color);
+        this.peso = peso;
     }
 
-    public getCapacidadCarga(): number {
-        return this.capacidadCarga;
+    public getPeso(): number {
+        return this.peso;
     }
 
-    public tieneCamara(): string {
-        return this.camaraFrigrorifica;
+    public setPeso(peso: number): void {
+        this.peso = peso;
     }
 }

@@ -1,11 +1,9 @@
-import Auto from './auto'
+import Vehiculo from './vehiculo'
 
 
-export default class Moto extends Auto {
-    constructor(marca, modelo, year, color) {
-        super(marca, modelo, year, color);
-
-        this.ruedas = 2;
+export default class Moto extends Vehiculo {
+    public constructor(dominio: string, titular: string, marca: string, modelo: string, año: number, color: string) {
+        super(dominio, titular, marca, modelo, año, color)
     }
 
     public hacerWilly(): void {

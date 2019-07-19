@@ -3,6 +3,25 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 17/07/2019
+
+16. **Ejercicio:**
+    - Implementar el diagrama: https://prnt.sc/ogybru
+    - Puede que esté incompleto.
+    - Agregar lo que crean necesario.
+
+17. **Ejercicio:**
+    - Elegir tres ejercicios realizados anteriormente de los fuera de clase y plantear el diagrama de clase.
+
+18. **Ejercicio:**
+    - Plantear un diagrama de clase con los siguientes requisitos e implementar:
+
+        - Herencia.
+        - Composición.
+        - Variables protected.
+    
+              task: npm run ej18
+
 ## \# 15/07/2019
 
 14. **Ejercicio:**

@@ -1,18 +1,23 @@
+import * as fs from 'fs'
 import Book from './book'
 import * as rl from '../node_modules/readline-sync'
 
 export default class Library {
     private db: Book[]
 
-    public constructor(db: Book[]) {
-        this.db = db;
+    public constructor(txtRoute: string, separatorRows: string, separatorColumns: string) {
+        this.db = this.loadDb(txtRoute, separatorRows, separatorColumns)
     }
 
-    public showBooks(): void {
+    public printBookList(): void {
         console.log("\n");
         for (let i = 0; i < this.db.length; i++) {
             console.log(`${i + 1}- Title: ${this.db[i].getTitle()}. Author: ${this.db[i].getAuthor()}. Year: ${this.db[i].getYear()}`);
         }
+    }
+
+    public getDb(): Book[]{
+        return this.db;
     }
 
     public addBook(): void {
@@ -57,5 +62,17 @@ export default class Library {
 
         let newBook: Book = new Book(t, a, y);
         return newBook;
+    }
+
+    private loadDb(txtRoute, separatorRows, separatorColumns): Book[] {
+        let txt: string[] = fs.readFileSync(txtRoute, 'utf8').split(separatorRows);
+        let x: string[][] = new Array(txt.length);
+        let bookArr: Book[] = new Array(txt.length);
+
+        for (let i = 0; i < txt.length; i++) {
+            x[i] = txt[i].split(separatorColumns);
+            bookArr[i] = new Book(x[i][0], x[i][1], parseInt(x[i][2]));
+        }
+        return bookArr;
     }
 }

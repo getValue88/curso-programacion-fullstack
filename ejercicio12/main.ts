@@ -6,20 +6,16 @@
     Luego incorporar en donde se crea necesario un mecanismo para leer libros desde un archivo de texto
 */
 
-import txtToBookArr from './txtToBookArr'
 import Library from './library'
 
-let bookArr = new txtToBookArr('ejercicio12/data.txt', '\r\n', ',');
-let db = bookArr.returnBookArr();
-
-let library = new Library(db);
+let library = new Library('ejercicio12/data.txt', '\r\n', ',');
 
 
-library.showBooks();
+library.printBookList();
 
 // console.log(library.searchByTitle()); //buscar por titulo 
 // library.searchByTitle('u'); //actualizar por titulo
 // library.searchByTitle('d'); //borrar por titulo
 // library.addBook(); //agregar libro
 
-library.showBooks();
+library.printBookList();

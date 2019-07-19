@@ -1,77 +1,18 @@
-export default class Auto {
-    private estaPrendido: boolean
-    private velocidadActual: number
-    private color: string
-    private marca: string
-    private modelo: string
-    private year: number
-    private kilometraje: number
-    protected ruedas: number
+import Vehiculo from "./vehiculo";
 
-    public constructor(marca: string, modelo: string, year: number, color: string) {
-        this.estaPrendido = false;
-        this.velocidadActual = 0;
-        this.color = color;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.year = year;
-        this.kilometraje = 0;
-        this.ruedas = 4
+export default class Auto extends Vehiculo {
+    private puertas: number
+
+    constructor(dominio: string, titular: string, marca: string, modelo: string, año: number, color: string, puertas: number) {
+        super(dominio, titular, marca, modelo, año, color);
+        this.puertas = puertas;
     }
 
-    public estaEncendido(): boolean {
-        return this.estaPrendido;
+    public getPuertas(): number {
+        return this.puertas;
     }
 
-    public encenderApagar(): void {
-        if (this.estaPrendido) {
-            this.estaPrendido = false;
-        } else {
-            this.estaPrendido = true;
-        }
-    }
-
-    public acelerar(): void {
-        this.velocidadActual += 1;
-    }
-
-    public frenar(): void {
-        this.velocidadActual -= 1;
-    }
-
-    public setKilometraje(n: number) {
-        this.kilometraje += n;
-    }
-
-    public getStatus(): boolean {
-        return this.estaPrendido;
-    }
-
-    public getVelocidadActual(): number {
-        return this.velocidadActual;
-    }
-
-    public getMarca(): string {
-        return this.marca;
-    }
-
-    public getModel(): string {
-        return this.modelo;
-    }
-
-    public getYear(): number {
-        return this.year;
-    }
-
-    public getKilometraje(): number {
-        return this.kilometraje;
-    }
-
-    public getColor(): string {
-        return this.color;
-    }
-
-    public getRuedas(): number {
-        return this.ruedas;
+    public setPuertas(puertas: number): void {
+        this.puertas = puertas;
     }
 }
