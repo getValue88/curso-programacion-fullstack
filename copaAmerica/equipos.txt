@@ -1,0 +1,12 @@
+Argentina,a
+Colombia,b
+Brasil,a
+Peru,b
+Chile,b
+Ecuador,b
+Uruguay,a
+Paraguay,b
+Bolivia,b
+Venezuela,b
+Japon,b
+Catar,b

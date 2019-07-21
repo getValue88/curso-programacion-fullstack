@@ -14,7 +14,8 @@
     "sumar3": "node ejercicio3/parametros_por_linea_de_comandos.js -4 2.2",
     "ej13": "tsc ejercicio13/main.ts && node ejercicio13/main.js",
     "ej15": "tsc ejercicio15/main.ts && node ejercicio15/main.js",
-    "ej18": "tsc ejercicio18/main.ts && node ejercicio18/main.js"
+    "ej18": "tsc ejercicio18/main.ts && node ejercicio18/main.js",
+    "cAmerica" : "tsc copaAmerica/main.ts && node copaAmerica/main.ts" 
   },
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",
