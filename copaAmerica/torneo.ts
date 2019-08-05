@@ -1,4 +1,4 @@
-import * as fs from 'fs'
+import * as fs from 'fs';
 import Equipo from "./equipo";
 import Grupo from "./grupo";
 import Fecha from "./fecha";

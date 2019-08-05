@@ -1,0 +1,6 @@
+2,dodge,ram,2500
+1,Chevrolet,Corsa
+3,Lamborghini,Diablo
+2,Toyota,Hilux,4000
+1,Fiat,Palio
+3,Nissan,GTR

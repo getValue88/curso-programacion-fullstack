@@ -3,6 +3,17 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 26/07/2019
+
+19. **Ejercicio:**
+    - Parte 1
+      - Generar diagrama de clases empleando interfaces o clases abstractas.
+    - Parte 2
+      - El sistema tiene que ser capaz de persistir los datos → leer/escribir** archivos TXT.
+      - La idea es que no se pierdan los datos cuando termine la ejecución del programa.
+
+            task: npm run ej19
+
 ## \# 17/07/2019
 
 16. **Ejercicio:**
