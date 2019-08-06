@@ -3,6 +3,33 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 05/08/2019
+
+20. **Ejercicio:**
+    - Implementar un sistema de archivos.
+    - Investigar patrón composite.
+           
+          task: npm run ej20
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio20UML.png)
+
+21. **Ejercicio:**
+    - Extender clase Auto implementada anteriormente, para que soporte seis tipos de datos más → todos pasados en el constructor.
+    - Investigar patrón builder.
+
+          task: npm run ej21
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio21UML.png)
+
+22. **Ejercicio:**
+    - Implementar un logger que incorpore al sistema de gestión de archivos.
+    - Investigar patrón singleton.
+    - Incluir un archivo de texto que explique las razones de por qué tomaron las decisiones que tomaron.
+
+          task: npm run ej22
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio22UML.png)
+
 ## \# 26/07/2019
 
 19. **Ejercicio:**
@@ -14,6 +41,8 @@ Ejercicios y prácticas del curso fullstack 2019
 
             task: npm run ej19
 
+        ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ej19UML.png)
+
 ## \# 17/07/2019
 
 16. **Ejercicio:**
@@ -24,6 +53,12 @@ Ejercicios y prácticas del curso fullstack 2019
 17. **Ejercicio:**
     - Elegir tres ejercicios realizados anteriormente de los fuera de clase y plantear el diagrama de clase.
 
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej12.png)
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej13.png)
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej15.png)
+
 18. **Ejercicio:**
     - Plantear un diagrama de clase con los siguientes requisitos e implementar:
 
@@ -32,6 +67,8 @@ Ejercicios y prácticas del curso fullstack 2019
         - Variables protected.
     
               task: npm run ej18
+
+    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej18.png)
 
 ## \# 15/07/2019
 

@@ -1,0 +1,15 @@
+Resolucion ejercicio 22:
+    -Interfaz Component determina el comportamiento general de archivos y carpetas dentro del arbol.
+    -Clase Logger (Singleton) tiene un método público writeLog(time: Date, event: string, desc: string): void --> se encarga de registrar todas las modificaciones del arbol y guardarlas en logger/log.txt
+    -Clases File y Folder implementan interfaz Component.
+    -File tiene 3 métodos :
+        + getName():string --> devuelve el nombre del archivo.
+        + rename(newName: string): void --> cambia el nombre del archivo. Utiliza writeLog() de Logger.
+        + traverse(depth: number): void --> imprime el nombre del archivo tabulando según su profundidad en el arbol.
+
+    -Folder está compuesto por un arreglo de Component y tiene 5 metodos:
+        + getName(): string --> devuelve el nombre del nodo.
+        + add(c: Component): void --> agrega un nodo dentro de otro nodo. Utiliza writeLog() de Logger.
+        + delete(c: Component): void --> elimina el nodo hijo c. Utiliza writeLog() de Logger.
+        + rename(): void --> renombra el nodo. Utiliza writeLog() de Logger.
+        + traverse(depth: number): void --> Recorre e imprime todos los nodos hijos de una carpeta, tabulando según su profundidad en el arbol.

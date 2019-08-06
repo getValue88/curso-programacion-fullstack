@@ -16,7 +16,10 @@
     "ej15": "tsc ejercicio15/main.ts && node ejercicio15/main.js",
     "ej18": "tsc ejercicio18/main.ts && node ejercicio18/main.js",
     "cAmerica": "tsc copaAmerica/main.ts && node copaAmerica/main.ts",
-    "ej19": "tsc ejercicio19/main.ts && node ejercicio19/main.js"
+    "ej19": "tsc ejercicio19/main.ts && node ejercicio19/main.js",
+    "ej20": "tsc ejercicio20/main.ts && node ejercicio20/main.js",
+    "ej21": "tsc ejercicio21/main.ts && node ejercicio21/main.js",
+    "ej22": "tsc ejercicio22/main.ts && node ejercicio22/main.js"
   },
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",
