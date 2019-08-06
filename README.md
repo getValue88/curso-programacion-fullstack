@@ -11,7 +11,7 @@ Ejercicios y prácticas del curso fullstack 2019
            
           task: npm run ej20
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio20UML.png)
+    ![UML](ejercicio20\ejercicio20UML.png)
 
 21. **Ejercicio:**
     - Extender clase Auto implementada anteriormente, para que soporte seis tipos de datos más → todos pasados en el constructor.
@@ -19,7 +19,7 @@ Ejercicios y prácticas del curso fullstack 2019
 
           task: npm run ej21
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio21UML.png)
+    ![UML](ejercicio21\ejercicio21UML.png)
 
 22. **Ejercicio:**
     - Implementar un logger que incorpore al sistema de gestión de archivos.
@@ -28,7 +28,7 @@ Ejercicios y prácticas del curso fullstack 2019
 
           task: npm run ej22
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ejercicio22UML.png)
+    ![UML](ejercicio22\ejercicio22UML.png)
 
 ## \# 26/07/2019
 
@@ -41,7 +41,7 @@ Ejercicios y prácticas del curso fullstack 2019
 
             task: npm run ej19
 
-        ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/ej19UML.png)
+        ![UML](ejercicio19\ej19UML.png)
 
 ## \# 17/07/2019
 
@@ -53,11 +53,11 @@ Ejercicios y prácticas del curso fullstack 2019
 17. **Ejercicio:**
     - Elegir tres ejercicios realizados anteriormente de los fuera de clase y plantear el diagrama de clase.
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej12.png)
+    ![UML](ejercicio17\UMLej12.png)
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej13.png)
+    ![UML](ejercicio17\UML ej13.xml)
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej15.png)
+    ![UML](ejercicio17\UML ej15.xml)
 
 18. **Ejercicio:**
     - Plantear un diagrama de clase con los siguientes requisitos e implementar:
@@ -68,7 +68,7 @@ Ejercicios y prácticas del curso fullstack 2019
     
               task: npm run ej18
 
-    ![Screenshots](https://github.com/getValue88/curso-programacion-fullstack/tree/master/ejercicio17/UMLej18.png)
+    ![UML](ejercicio18\UMLej18.png)
 
 ## \# 15/07/2019
 
