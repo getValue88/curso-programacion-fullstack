@@ -11,7 +11,7 @@ Ejercicios y prácticas del curso fullstack 2019
            
           task: npm run ej20
 
-    ![UML](ejercicio20/ejercicio20UML.png)
+        ![UML](ejercicio20/ejercicio20UML.png)
 
 21. **Ejercicio:**
     - Extender clase Auto implementada anteriormente, para que soporte seis tipos de datos más → todos pasados en el constructor.
@@ -19,7 +19,7 @@ Ejercicios y prácticas del curso fullstack 2019
 
           task: npm run ej21
 
-    ![UML](ejercicio21/ejercicio21UML.png)
+        ![UML](ejercicio21/ejercicio21UML.png)
 
 22. **Ejercicio:**
     - Implementar un logger que incorpore al sistema de gestión de archivos.
@@ -28,7 +28,7 @@ Ejercicios y prácticas del curso fullstack 2019
 
           task: npm run ej22
 
-    ![UML](ejercicio22/ejercicio22UML.png)
+        ![UML](ejercicio22/ejercicio22UML.png)
 
 ## \# 26/07/2019
 
@@ -53,11 +53,11 @@ Ejercicios y prácticas del curso fullstack 2019
 17. **Ejercicio:**
     - Elegir tres ejercicios realizados anteriormente de los fuera de clase y plantear el diagrama de clase.
 
-    ![UML](ejercicio17/UMLej12.png)
+        ![UML](ejercicio17/UMLej12.png)
 
-    ![UML](ejercicio17/UMLej13.xml)
+        ![UML](ejercicio17/UMLej13.png)
 
-    ![UML](ejercicio17/UMLej15.xml)
+        ![UML](ejercicio17/UMLej15.png)
 
 18. **Ejercicio:**
     - Plantear un diagrama de clase con los siguientes requisitos e implementar:
@@ -68,7 +68,7 @@ Ejercicios y prácticas del curso fullstack 2019
     
               task: npm run ej18
 
-    ![UML](ejercicio18/UMLej18.png)
+            ![UML](ejercicio18/UMLej18.png)
 
 ## \# 15/07/2019
 
