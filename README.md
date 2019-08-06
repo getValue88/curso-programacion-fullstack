@@ -55,9 +55,9 @@ Ejercicios y prácticas del curso fullstack 2019
 
     ![UML](ejercicio17/UMLej12.png)
 
-    ![UML](ejercicio17/UML ej13.xml)
+    ![UML](ejercicio17/UMLej13.xml)
 
-    ![UML](ejercicio17/UML ej15.xml)
+    ![UML](ejercicio17/UMLej15.xml)
 
 18. **Ejercicio:**
     - Plantear un diagrama de clase con los siguientes requisitos e implementar:
