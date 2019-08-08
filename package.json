@@ -19,7 +19,11 @@
     "ej19": "tsc ejercicio19/main.ts && node ejercicio19/main.js",
     "ej20": "tsc ejercicio20/main.ts && node ejercicio20/main.js",
     "ej21": "tsc ejercicio21/main.ts && node ejercicio21/main.js",
-    "ej22": "tsc ejercicio22/main.ts && node ejercicio22/main.js"
+    "ej22": "tsc ejercicio22/main.ts && node ejercicio22/main.js",
+    "ej23_1": "tsc ejercicio23/ejercicio19_tryCatch/main.ts && node ejercicio23/ejercicio19_tryCatch/main.js",
+    "ej23_2": "tsc ejercicio23/ejercicio20_tryCatch/main.ts && node ejercicio23/ejercicio20_tryCatch/main.js",
+    "ej23_3": "tsc ejercicio23/ejercicio21_tryCatch/main.ts && node ejercicio23/ejercicio21_tryCatch/main.js",
+    "ej24": "tsc ejercicio24/main.ts && node ejercicio24/main.js "
   },
   "author": "fc_pincharrata@hotmail.com.ar",
   "license": "ISC",

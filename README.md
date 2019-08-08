@@ -3,6 +3,20 @@
 Ejercicios y prácticas del curso fullstack 2019
 
 ***
+## \# 07/08/2019
+
+23. **Ejercicio:**
+    - Tomar tres ejercicios a elección que hayan hecho antes, y modificar la validación de los datos para hacerla empleando errores.
+
+          tasks: npm run ej23_1
+                 npm run ej23_2
+                 npm run ej23_3
+
+24. **Ejercicio:**
+    - A partir del soporte de errores de la base de datos, agregar a dicho soporte manejo de errores propios.
+
+          task: npm run ej24
+
 ## \# 05/08/2019
 
 20. **Ejercicio:**
